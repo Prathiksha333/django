@@ -16,6 +16,6 @@ spec:
     spec:
      containers:
        - name: my-django-app
-         image: prathiksha3/djangoapp
+         image: prathiksha3/djan
          ports:
           - containerPort: 8000   
