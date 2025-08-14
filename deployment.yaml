@@ -1,21 +1,21 @@
 apiVersion: apps/v1
 kind: Deployment 
 metadata: 
- name: my-notes-app
+ name: my-djano-app
  labels:
-   app: my-notes-app
+   app: my-django-app
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: my-notes-app
+      app: my-django-app
   template:
     metadata: 
      labels:
-      app: my-notes-app
+      app: my-django-app
     spec:
      containers:
-       - name: my-notes-app
+       - name: my-django-app
          image: prathiksha3/djangoapp
          ports:
           - containerPort: 8000   
